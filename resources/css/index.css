@@ -1,0 +1,18 @@
+.cm-gutters {
+    height: 250px !important;
+}
+
+.cm-scroller {
+    height: 250px !important;
+}
+
+.cm-gutters {
+    height: 250px !important;
+}
+
+.cm-editor {
+    height: 250px !important;
+    position: relative;
+    max-width: 100%;
+    overflow: auto !important;
+}
