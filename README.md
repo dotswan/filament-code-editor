@@ -4,6 +4,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Software License][ico-license]][link-license]
 
+![image](https://github.com/dotswan/filament-code-editor/assets/20874565/d35153c5-6699-43c6-b250-d6f9bd277b43)
 
 ## Introduction
 
