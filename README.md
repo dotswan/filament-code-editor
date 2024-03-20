@@ -4,7 +4,10 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Software License][ico-license]][link-license]
 
-![image](https://github.com/dotswan/filament-code-editor/assets/20874565/d35153c5-6699-43c6-b250-d6f9bd277b43)
+
+<img src="https://github.com/dotswan/filament-code-editor/assets/20874565/f814ec5f-5d73-4331-a669-25d50cfdc444" width="400" height="320">
+
+<img src="https://github.com/dotswan/filament-code-editor/assets/20874565/df6608c9-2088-4d78-8a94-a814ba873c6b" width="400" height="320">
 
 ## Introduction
 
@@ -14,10 +17,6 @@ The Filament Code Editor package enhances Filament with a specialized field type
   * Integration of the CodeMirror JavaScript library into Filament components.
   * Support for multiple code languages including CSS, HTML, JavaScript, JSON, and PHP.
   * Effortless editing of code within the familiar Filament interface.
-
-<img src="https://github.com/dotswan/filament-code-editor/assets/20874565/f814ec5f-5d73-4331-a669-25d50cfdc444" width="500" height="420">
-
-<img src="https://github.com/dotswan/filament-code-editor/assets/20874565/df6608c9-2088-4d78-8a94-a814ba873c6b" width="500" height="420">
 
 ## Installation
 
