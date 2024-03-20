@@ -15,6 +15,10 @@ The Filament Code Editor package enhances Filament with a specialized field type
   * Support for multiple code languages including CSS, HTML, JavaScript, JSON, and PHP.
   * Effortless editing of code within the familiar Filament interface.
 
+<img src="https://github.com/dotswan/filament-code-editor/assets/20874565/f814ec5f-5d73-4331-a669-25d50cfdc444" width="500" height="420">
+
+<img src="https://github.com/dotswan/filament-code-editor/assets/20874565/df6608c9-2088-4d78-8a94-a814ba873c6b" width="500" height="420">
+
 ## Installation
 
 To integrate the Filament Code Editor package into your project, use Composer:
@@ -32,8 +36,24 @@ use Dotswan\FilamentCodeEditor\Fields\CodeEditor;
 
 CodeEditor::make('codes')
     // Additional configuration goes here, if needed
-    ->id('unique_field_id');
+    ->id('unique_field_id')
+    ->minHeight(768)
+    ->isReadOnly(true)
+    ->showCopyButton(true)
+    ->darkModeTheme('gruvbox-dark')
+    ->lightModeTheme('basic-light')
+    ->columnSpanFull(),
 ```
+
+**Theme values:**
+ - basic-light
+ - basic-dark
+ - solarized-dark
+ - solarized-light
+ - material-dark
+ - nord
+ - gruvbox-light
+ - gruvbox-dark
 
 ## Supported Languages
 
