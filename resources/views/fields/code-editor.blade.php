@@ -9,12 +9,12 @@
     :state-path="$getStatePath()"
     >
 
-    <div style="position: relative;">
+    <div class="code-editor-textarea">
 
-        <div x-data="{ copied: false }" x-show="{{ $getShowCopyButton() }}">
+        <div x-data="{ copied: false}" x-show="{{ $getShowCopyButton() }}">
             <div class="copy-button"
-                @click="$clipboard(`{{ $getState() }}`); copied = true; setTimeout(() => { copied = false; }, 5000)">
-                <span x-show="!copied">Copy</span>
+                @click="copyContent(`{{ $getState() }}`); copied = true; setTimeout(() => { copied = false; }, 5000)">
+                <span x-show="!copied">Copy Content</span>
                 <span x-show="copied">Copied</span>
             </div>
         </div>
@@ -33,4 +33,23 @@
             </div>
         </div>
     </div>
+
+    <script>
+        async function copyContent(content) {
+          try {
+            if (navigator.clipboard && window.isSecureContext) {
+              await navigator.clipboard.writeText(content);
+            } else {
+              const el = document.createElement('textarea');
+              el.value = content;
+              document.body.appendChild(el);
+              el.select();
+              document.execCommand('copy');
+              document.body.removeChild(el);
+            }
+          } catch (err) {
+            console.error('Failed to copy text: ', err);
+          }
+        }
+      </script>
 </x-filament-forms::field-wrapper>
