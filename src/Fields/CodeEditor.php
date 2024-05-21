@@ -10,7 +10,7 @@ class CodeEditor extends Field
 {
     protected string $view = 'filament-code-editor::fields.code-editor';
 
-    protected int | Closure | null $minHeight = 768;
+    protected int | Closure | null $minHeight = 420;
     protected string | null $customStyle = null;
     protected string | null $darkModeTheme = null;
     protected string | null $lightModeTheme = null;
@@ -54,7 +54,7 @@ class CodeEditor extends Field
         return $this;
     }
 
-    public function showCopyButton(bool $showCopyButton = false): static
+    public function showCopyButton(bool $showCopyButton = true): static
     {
         $this->showCopyButton = $showCopyButton;
 
@@ -66,9 +66,9 @@ class CodeEditor extends Field
         return $this->evaluate($this->isReadOnly);
     }
 
-    public function getShowCopyButton(): bool
+    public function getShowCopyButton(): string
     {
-        return $this->evaluate($this->showCopyButton);
+        return $this->evaluate($this->showCopyButton ? "true" : "false");
     }
 
     public function getMinHeight(): ?int

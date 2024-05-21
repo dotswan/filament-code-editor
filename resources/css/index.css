@@ -10,9 +10,7 @@
 .cm-editor {
     min-height: inherit !important;
     position: relative;
-    max-width: 100%;
     overflow: auto !important;
-    width: 70vw;
     height: inherit;
 }
 
@@ -21,20 +19,23 @@
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    height: 30px;
     cursor: pointer;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: -10px;
+    position: relative;
+    top: 1px;
     font-size: 12px;
-    right: -10px;
-    z-index: 100;
 }
 .copy-button:hover {
     background-color: #0066ff;
+}
+
+.code-editor-textarea{
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    border-radius: 5px;
 }
