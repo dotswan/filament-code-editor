@@ -28,7 +28,7 @@
             '{{ $getLightModeTheme() }}',
         
         )">
-            <div wire:ignore class="w-full border" x-ref="codeEditor"
+            <div wire:ignore class="w-full code-editor-textarea-wrapper" x-ref="codeEditor"
                 style="height:{{ $getMinHeight() }}px;overflow: hidden; {{ $getCustomStyle() }}">
             </div>
         </div>
