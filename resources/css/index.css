@@ -39,3 +39,8 @@
     overflow: hidden;
     border-radius: 5px;
 }
+
+.code-editor-textarea-wrapper{
+    border-color: rgba(var(--gray-500), var(--tw-border-opacity, 1));
+    border-width: 1px;
+}
