@@ -22,9 +22,16 @@ The Filament Code Editor package enhances Filament with a specialized field type
 
 To integrate the Filament Code Editor package into your project, use Composer:
 
+
 ```bash
 composer require dotswan/filament-code-editor
 ```
+
+For **Filament v3**:
+```bash
+composer require dotswan/filament-code-editor:"^1.1.4"
+```
+
 
 ## Basic Usage
 
