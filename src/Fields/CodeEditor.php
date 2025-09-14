@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Dotswan\FilamentCodeEditor\Fields;
 
+use Closure;
 use Filament\Forms\Components\Field;
 
 class CodeEditor extends Field

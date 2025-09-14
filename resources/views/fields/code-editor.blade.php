@@ -1,10 +1,7 @@
 <x-filament-forms::field-wrapper 
     :id="$getId()" 
     :label="$getLabel()" 
-    :label-sr-only="$isLabelHidden()" 
-    :helper-text="$getHelperText()"    
-    :hint="$getHint()" 
-    :hint-icon="$getHintIcon()" 
+    :label-sr-only="$isLabelHidden()"    
     :required="$isRequired()" 
     :state-path="$getStatePath()"
     >
